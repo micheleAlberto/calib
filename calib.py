@@ -6,7 +6,6 @@ from cv2 import calibrateCamera
 #cv2.calibrateCamera
 #(objectPoints, imagePoints, imageSize[, cameraMatrix[, distCoeffs[, rvecs[, tvecs[, flags[, criteria]]]]]]) 
 #retval, cameraMatrix, distCoeffs, rvecs, tvecs
-from utils import keypoint2SIOkp3
 from knnwrap.knn import KnnIndex
 from PIL import Image, ExifTags
 import glob
