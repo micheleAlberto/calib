@@ -1,6 +1,11 @@
 # calib
 camera intrinsic calibration using known planar images (of banknotes) as patterns instead of calibration grids
 
+Reference images are described with the ORB detector and descriptor to build a reference index
+Calibration images keypoints and features are extracted and matched to the reference , than matches are filtered following the homograpy with the largest consensus on a RANSAC run.
+Camera calibration is performed on such maches from multiple poses.
+Exif focal lenght is also shown and used to calculate image sensor width: sometimes exif data make sense , sometimes not...
+
 #example comand:
 python calib.py "meptest/*" dataset/EUR10REAR
 #example result
